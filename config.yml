@@ -93,10 +93,6 @@ menu:
       url: "/posts/"
       weight: 20
 
-    - identifier: "about"
-      name: "About"
-      url: "/about/"
-      weight: 30
 
     # Add more menu items as needed
 
