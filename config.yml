@@ -1,24 +1,22 @@
-# --- Basic Site Configuration (Corrected for Pest Policy) ---
+# --- Basic Site Configuration (Edit these for Pest Policy) ---
 
 baseURL: 'https://pestpolicy.com/' # The base URL for your deployed website.
 
-languageCode: 'en-us'             # Your language code
-
-# Corrected title for clarity
-title: 'Pest Policy & Home Solutions' # Changed from 'Home Improvement'
+languageCode: 'en-us'           # Your language code
+title: 'Home Improvement'         # Your website's title
+theme: "PaperModX"               # Make sure this is "PaperModX"
 
 permalinks:
-  posts: "/:slug/"                # Permalink structure for your articles
+  posts: "/:slug/"               # Permalink structure for your articles
 
-# --- Homepage Info / Banner Configuration (Theme-specific, Content Corrected) ---
+# --- Homepage Info / Banner Configuration (theme-specific) ---
 
 homeInfoParams:
   Title: "Welcome to Pest Policy"
-  # Corrected content to reflect pest control/home solutions topic
   Content: |
-    Your trusted resource for pest control information, product reviews, and DIY home solutions including sprayers and paint guides. We help you tackle pests and improve your home effectively.
+    Your guide to achieving genuine quality sleep. We help you go from feeling sleepy to being truly rested through practical tips and advice.
     # You can add more markdown content here for your banner.
-    # - For example: Explore [Product Reviews](/categories/product-reviews/) or find [DIY Guides](/categories/guide/).
+    # - For example: Learn more about [Sleep Hygiene](/sleep-hygiene/) or [Bedroom Environment](/bedroom-environment/).
 
   # Example buttons (uncomment and edit if needed)
   # buttons:
@@ -32,17 +30,12 @@ homeInfoParams:
 params:
   env: "production" # Keep as "production" for live site builds
 
-  # Site Metadata for SEO (Keywords Corrected)
+  # Site Metadata for SEO
   description: "Pest solutions, Sprayers and Paint. Visit the [Product Reviews](/categories/product-reviews/) or check out the [DIY Guides](/categories/guide/)."
   keywords:
     - pest control
-    - pest solutions # Added for broader relevance
     - spray painting
-    - pest guides    # Added for content type
-    - product reviews # Added for content type
-    - DIY pest control # Added for user approach
-    # Removed 'walking and running shoes'
-    # Add more specific keywords related to the pests/products you cover
+    - walking and running shoes
 
   author: "Isaac"
 
@@ -55,11 +48,11 @@ params:
   ShowShareButtons: true
   ShowReadingTime: true
   ShowPostNavLinks: true
-  ShowRssButtonLeafBundle: false # Keep false unless you need RSS for leaf bundles
+  ShowRssButtonLeafBundle: false
   ShowToc: true
-  tocPosition: "right"
+  tocPosition: "right" # <--- Add this based on documentation
 
-  # Profile Mode (optional homepage style - currently commented out)
+  # Profile Mode (optional homepage style)
   # profileMode:
   #   enabled: false
   #   title: "Home Improvement"
@@ -75,7 +68,7 @@ params:
   #     - name: "About"
   #       url: "/about/"
 
-  # Social Icons (optional - currently commented out)
+  # Social Icons (optional)
   # socialIcons:
   #   - name: "linkedin"
   #     url: "your-linkedin-profile-url"
@@ -98,10 +91,9 @@ menu:
       url: "/posts/"
       weight: 20
 
-    # Add more menu items as needed, potentially for your programmatic sections like 'Policies' or 'Product Guides'
+    # Add more menu items as needed
 
 # --- Optional Advanced Config Sections (commented) ---
-# These are fine as is, uncomment and configure if you need them later.
 
 # outputs:
 #   home: ["HTML", "RSS", "JSON"]
@@ -134,4 +126,4 @@ menu:
 #     enable: true
 #     id: "UA-XXXXXXXXX-X"
 
-# --- End of corrected config.yaml ---
+# --- End of config.yaml ---
