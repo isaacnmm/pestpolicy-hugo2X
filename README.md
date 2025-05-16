@@ -1,3 +1,3 @@
-# hugo-PaperModX Example
+# pestpolicy-hugo2X
 
-This repository offers an example site for [hugo-PaperModX](https://github.com/reorx/hugo-PaperModX)
+This is the repository for my pest policy project website built with Hugo.
