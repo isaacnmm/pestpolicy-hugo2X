@@ -4,6 +4,9 @@ languageCode: 'en-us' # Your language code
 title: 'Sleepy to Rested' # Your website's title
 theme: "PaperModX" # Make sure this is "PaperModX"
 
+permalinks:
+  posts: "/:slug/"
+
 # --- Theme-Specific Parameters (PaperModX) ---
 # Found within the [params] or 'params:' section. Edit these for your site.
 params:
