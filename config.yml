@@ -80,10 +80,6 @@ params:
 
 menu:
   main:
-    - identifier: "home"
-      name: "Home"
-      url: "/"
-      weight: 10
 
     - identifier: "articles"
       name: "Blog"
