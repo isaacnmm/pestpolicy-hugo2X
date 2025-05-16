@@ -36,6 +36,10 @@ params:
     - pest control
     - spray painting
     - walking and running shoes
+    - pest solutions # Added for broader relevance
+    - pest guides    # Added for content type
+    - product reviews # Added for content type
+    - DIY pest control # Added for user approach
 
   author: "Isaac"
 
@@ -50,7 +54,6 @@ params:
   ShowPostNavLinks: true
   ShowRssButtonLeafBundle: false
   ShowToc: true
-  tocPosition: "right" # <--- Add this based on documentation
 
   # Profile Mode (optional homepage style)
   # profileMode:
