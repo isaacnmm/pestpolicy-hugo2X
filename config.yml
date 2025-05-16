@@ -1,130 +1,126 @@
-# --- Basic Site Configuration (Edit these for Pest Policy) ---
+# --- Basic Site Configuration (for Home Improvement Guides / pestpolicy.com) ---
+# The base URL for your deployed website.
+# For Netlify deployment, ensure this matches your site's URL.
+# It's often best to manage this via Netlify build settings or netlify.toml
+# to handle different deploy URLs (e.g., deploy previews vs production).
+baseURL: "https://pestpolicy.com/"
 
-baseURL: 'https://pestpolicy.com/' # The base URL for your deployed website.
+languageCode: "en-us" # Your site's language code
+title: "Home Improvement Guides" # Your website's main title
+theme: 'hugo-PaperMod' # Ensure this matches the exact name of the theme folder in your 'themes' directory. Note: This is 'hugo-PaperMod', not 'PaperModX'.
 
-languageCode: 'en-us'               # Your language code
-title: 'Home Improvement'           # Your website's title
-theme: "PaperModX"                  # Make sure this is "PaperModX"
+enableRobotsTXT: true # Enables robots.txt generation for SEO
+enableSitemap: true # Enables sitemap generation for SEO
 
+# Define output formats for different page types
+outputs:
+  home: ["HTML", "RSS", "JSON", "robotsTXT"] # Homepage outputs
+  page: ["HTML"] # Standard page outputs
+  section: ["HTML", "RSS"] # Section (list) page outputs
+  sitemap: ["XML"] # Sitemap output
+
+# Define custom output formats (used above)
+outputFormats:
+  XML:
+    name: "Sitemap"
+    mediaType: "application/xml"
+    baseName: "sitemap"
+    isPlainText: true
+    notAlternative: true
+
+  robotsTXT:
+    name: "robotsTXT"
+    mediaType: "text/plain"
+    baseName: "robots"
+    isPlainText: true
+    notAlternative: true
+
+# Build settings to exclude drafts, future, and expired content in production builds
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+# Define taxonomies (how content is categorized and tagged)
+taxonomies:
+  tag: 'tags' # Content can have 'tags'
+  category: 'categories' # Content can have 'categories'
+
+# Define permalink structure for different content types
 permalinks:
-  posts: "/:slug/"                  # Permalink structure for your articles
+  posts: "/:slug/" # Posts will have URLs like /post-title/
 
-# --- Homepage Info / Banner Configuration (theme-specific) ---
+slug:
+  ugly: false # Use clean URLs (not /post.html)
 
-homeInfoParams:
-  Title: "Welcome to Pest Policy"
-  Content: |
-    Your guide to achieving genuine quality sleep. We help you go from feeling sleepy to being truly rested through practical tips and advice.
-    # You can add more markdown content here for your banner.
-    # - For example: Learn more about [Sleep Hygiene](/sleep-hygiene/) or [Bedroom Environment](/bedroom-environment/).
-
-  # Example buttons (uncomment and edit if needed)
-  # buttons:
-  #   - name: "Explore Articles"
-  #     url: "/posts/"
-  #   - name: "About Us"
-  #     url: "/about/"
-
-# --- Theme-Specific Parameters (PaperModX) ---
-
+# --- Theme-Specific Parameters (PaperMod - Original Theme) ---
+# Found within the 'params:' section. Edit these for your site.
 params:
-  env: "production" # Keep as "production" for live site builds
+  env: 'production' # Set environment to production for live site builds
+  defaultTheme: 'auto' # Use auto theme based on user system preference
+  disableSpecial1stPost: false # Control special styling for the first post
+  disableScrollToTop: false # Control the scroll-to-top button
 
-  # Site Metadata for SEO
-  description: "Pest solutions, Sprayers and Paint. Visit the [Product Reviews](/categories/product-reviews/) or check out the [DIY Guides](/categories/guide/)."
-  keywords:
-    - pest control 
-    - spray painting 
-    - walking and running shoes
+  # Site Metadata for SEO and theme display
+  title: "Home Improvement Guides" # Often used in the header/title bar (can be same as main title)
+  description: "Pest solutions, sprayers and paint. Visit the [Product Reviews](/categories/product-reviews/) or check out the [DIY Guides](/categories/guide/)" # Site description
+  robots: "index, follow" # Robots meta tag content
 
+  # Homepage Info / Banner Configuration (PaperMod theme)
+  homeInfoParams:
+    Title: "Home Improvement | Bugs, Paint, & Shoes" # Homepage banner title
+    Content: |
+      Welcome to Pestpolicy. Insights into bugs control, DIY painting, and Shoes - reveal how pests can affect painted painted surfaces and the performance of spray equipment. Understanding the interaction between paint types and sprayer technology is essential for achieving smooth, durable finishes.
 
-  author: "Isaac"
+      Proper maintenance of sprayers and selecting the right paint formulation can also minimize issues caused by bugs during and after application.
+      Visit the [Product Reviews](/categories/product-reviews/) or check out the [DIY Guides](/categories/guide/).
+      # This section defines the main content displayed in the homepage banner.
 
-  DateFormat: "January 2, 2006" # Format for dates
+  # Analytics Configuration (Google Analytics)
+  analytics:
+    google:
+      SiteVerificationTag: "wcIIamJKWxC3IcPXe02IZlAEWcGk828ZThxeK1w3aUQ" # Google Site Verification tag
 
-  defaultTheme: "light"         # Options: "light", "dark", or "auto"
-  # disableThemeToggle: true    # Uncomment to disable theme toggle
+  anonymizeIP: true # Anonymize IP addresses for analytics
 
-  # Feature toggles
-  ShowShareButtons: true
-  ShowReadingTime: true
-  ShowPostNavLinks: true
-  ShowRssButtonLeafBundle: false
-  ShowToc: true
+  # Image Processing Settings
+  imaging:
+    quality: 85 # Image quality for processing
+    webp: true # Enable WebP image format
 
-  # Profile Mode (optional homepage style)
-  # profileMode:
-  #   enabled: false
-  #   title: "Home Improvement"
-  #   subtitle: "Your journey to Home Improvement."
-  #   imageUrl: "path/to/your/profile/image.jpg"
-  #   imageZoom: false
-  #   imageCircleIcons: true
-  #   imageWidth: 125
-  #   imageHeight: 125
-  #   buttons:
-  #     - name: "Articles"
-  #       url: "/posts/"
-  #     - name: "About"
-  #       url: "/about/"
+# Sitemap configuration (can also be defined at the top level)
+sitemap:
+  changefreq: "weekly" # Frequency of changes for sitemap
+  priority: 0.7 # Priority for pages in sitemap
+  filename: "sitemap.xml" # Sitemap filename
+  disable: false # Enable sitemap generation
 
-  # Social Icons (optional)
-  # socialIcons:
-  #   - name: "linkedin"
-  #     url: "your-linkedin-profile-url"
-  #   - name: "github"
-  #     url: "your-github-profile-url"
-  #   - name: "twitter"
-  #     url: "your-twitter-profile-url"
+# Build settings (can also be defined at the top level)
+build:
+  errorOnMissingPagePermalinks: true # Error if permalink is missing
+  errorOnInvalidPermalinks: true # Error if permalink is invalid
+  writeStats: true # Write build statistics
+  useResourceCacheWhen: "always" # Use resource cache
+  noChmod: true # Disable chmod
 
-# --- Site Menu Configuration ---
-
+# --- Site Menu Configuration (Edit these for your navigation) ---
+# Defines the links that appear in your site's main menu.
 menu:
   main:
-    - identifier: "home"
-      name: "Home"
-      url: "/"
-      weight: 10
+    - name: Blog # Menu item text
+      url: /posts/ # URL the menu item links to
+      weight: 1 # Order of the menu item
 
-    - identifier: "articles"
-      name: "Blog"
-      url: "/posts/"
-      weight: 20
+    - name: Fleas
+      url: /categories/fleas/
+      weight: 2
 
+    - name: Product Reviews
+      url: /categories/product-reviews/
+      weight: 3
 
+    - name: Guides
+      url: /categories/guide/
+      weight: 4
     # Add more menu items as needed
 
-# --- Optional Advanced Config Sections (commented) ---
-
-# outputs:
-#   home: ["HTML", "RSS", "JSON"]
-#   page: ["HTML", "AMP"]
-#   section: ["HTML", "RSS"]
-#   taxonomy: ["HTML", "RSS"]
-#   term: ["HTML", "RSS"]
-
-# taxonomies:
-#   category: "categories"
-#   tag: "tags"
-#   series: "series"
-
-# markup:
-#   tableOfContents:
-#     startLevel: 2
-#     endLevel: 3
-#     ordered: true
-
-# sitemap:
-#   changefreq: "weekly"
-#   priority: 0.5
-#   filename: "sitemap.xml"
-
-# privacy:
-#   # Customize privacy settings here
-
-# services:
-#   googleAnalytics:
-#     enable: true
-#     id: "UA-XXXXXXXXX-X"
-
-# --- End of config.yaml ---
+# --- End of config.yaml for Home Improvement Guides ---
