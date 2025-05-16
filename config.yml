@@ -7,7 +7,7 @@ theme: "PaperModX" # Make sure this is "PaperModX"
 permalinks:
   posts: "/:slug/"
 
-  homeInfoParams:
+homeInfoParams:
     Title: "PaperModX"
     Content: |
       Welcome to demo of hugo's theme PaperModX.
