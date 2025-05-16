@@ -18,7 +18,7 @@ If youre seeking an affordable, eco-friendly way to control pests in your home, 
 [Borax](https://en.wikipedia.org/wiki/Borax)
 . This natural mineral has been a trusted pest control solution for over a century and offers a safe alternative to chemical pesticides.
 
-Whether you're dealing with ants, cockroaches, fleas, or bed bugs, 20 Mule Team Borax can help manage these unwelcome invaders effectively.
+Whether you're dealing with ants, the cockroaches, fleas, or bed bugs, 20 Mule Team Borax can help manage these unwelcome invaders effectively.
 ## What is 20 Mule Team Borax?
 20 Mule Team Borax is a crystalline mineral made from boron, sodium, oxygen, and water. For more than 100 years, it has been used in cleaning and laundry products. This mineral is not only economical but also environmentally friendly.
 
