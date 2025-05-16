@@ -133,4 +133,23 @@ menu:
 #     enable: true
 #     id: "UA-XXXXXXXXX-X"
 
+  analytics:
+    google:
+      SiteVerificationTag: "wcIIamJKWxC3IcPXe02IZlAEWcGk828ZThxeK1w3aUQ"
+
+  anonymizeIP: true
+
+  imaging:
+    quality: 85
+    webp: true
+taxonomies:
+  tag: 'tags'
+  category: 'categories'
+
+permalinks:
+  posts: "/:slug/"
+
+slug:
+  ugly: false
+
 # --- End of config.yaml ---
