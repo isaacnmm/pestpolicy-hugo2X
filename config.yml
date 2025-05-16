@@ -3,7 +3,7 @@
 baseURL: 'https://pestpolicy.com/' # The base URL for your deployed website.
 
 languageCode: 'en-us'               # Your language code
-title: 'Sleepy to Rested'           # Your website's title
+title: 'PestPolicy'           # Your website's title
 theme: "PaperModX"                  # Make sure this is "PaperModX"
 
 permalinks:
@@ -12,7 +12,7 @@ permalinks:
 # --- Homepage Info / Banner Configuration (theme-specific) ---
 
 homeInfoParams:
-  Title: "Welcome to Sleepy to Rested"
+  Title: "Welcome to Pest Policy"
   Content: |
     Your guide to achieving genuine quality sleep. We help you go from feeling sleepy to being truly rested through practical tips and advice.
     # You can add more markdown content here for your banner.
@@ -31,7 +31,7 @@ params:
   env: "production" # Keep as "production" for live site builds
 
   # Site Metadata for SEO
-  description: "Your guide to moving from sleepy to genuinely rested."
+  description: "Pest solutions, Sprayers and Paint. Visit the [Product Reviews](/categories/product-reviews/) or check out the [DIY Guides](/categories/guide/)."
   keywords:
     - sleep
     - rest
@@ -40,7 +40,7 @@ params:
     - insomnia
     - bedroom environment
 
-  author: "Elizabeth"
+  author: "Isaac"
 
   DateFormat: "January 2, 2006" # Format for dates
 
@@ -57,8 +57,8 @@ params:
   # Profile Mode (optional homepage style)
   # profileMode:
   #   enabled: false
-  #   title: "Sleepy to Rested"
-  #   subtitle: "Your journey to better sleep starts here."
+  #   title: "Home Improvement"
+  #   subtitle: "Your journey to Home Improvement."
   #   imageUrl: "path/to/your/profile/image.jpg"
   #   imageZoom: false
   #   imageCircleIcons: true
