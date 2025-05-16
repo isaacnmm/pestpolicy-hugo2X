@@ -1,146 +1,159 @@
 # --- Basic Site Configuration (Edit these for Sleepy to Rested) ---
-baseURL: 'https://pestpolicy.com/' # Your website's base URL
+# The base URL for your deployed website.
+# For Netlify, it's best practice to set this via environment variables
+# or netlify.toml so Hugo builds with the correct deploy URL.
+# You can keep this as your custom domain if you plan to use netlify.toml
+# or Netlify's built-in build logic for baseURL.
+baseURL: 'https://pestpolicy.com/'
+
 languageCode: 'en-us' # Your language code
 title: 'Sleepy to Rested' # Your website's title
 theme: "PaperModX" # Make sure this is "PaperModX"
 
 permalinks:
-  posts: "/:slug/"
+  posts: "/:slug/" # Permalink structure for your articles
 
+# --- Homepage Info / Banner Configuration (often theme-specific) ---
+# If your theme uses homeInfoParams for the banner content:
 homeInfoParams:
-    Title: "PaperModX"
+    Title: "Welcome to Sleepy to Rested" # Your homepage banner title
     Content: |
-      Welcome to demo of hugo's theme PaperModX.
+      Your guide to achieving genuine quality sleep. We help you go from feeling sleepy to being truly rested through practical tips and advice.
+      # You can add more markdown content here for your banner.
+      # - For example: Learn more about [Sleep Hygiene](/sleep-hygiene/) or [Bedroom Environment](/bedroom-environment/).
 
-      - **PaperModX** is a simple but fast and responsive theme with useful feature-set that enhances UX.
-
-      - PaperModX is based on theme [PaperMod](https://github.com/adityatelange/hugo-PaperMod).
-
-      To get started, please head to the [Docs](docs).
-
-      To see examples of different contents, head to [examples tag](tags/example).
+    # Example of adding buttons below the content (check PaperModX docs)
+    # buttons:
+    #   - name: "Explore Articles"
+    #     url: "/posts/"
+    #   - name: "About Us"
+    #     url: "/about/"
 
 # --- Theme-Specific Parameters (PaperModX) ---
-# Found within the [params] or 'params:' section. Edit these for your site.
+# Found within the 'params:' section. Edit these for your site.
 params:
   env: "production" # Keep as "production" for live site builds
-  description: "Your guide to moving from sleepy to genuinely rested." # Your site's description
-  keywords: # Your site's keywords
+
+  # Site Metadata for SEO
+  description: "Your guide to moving from sleepy to genuinely rested." # Your site's description for meta tags
+  keywords: # Your site's keywords for meta tags
     - sleep
     - rest
     - quality sleep
     - sleep health
     - insomnia
     - bedroom environment
-    # Add more relevant keywords
-  author: "Elizabeth" # Your author name
+    # Add more relevant keywords as needed
+
+  author: "Elizabeth" # Your author name (used in meta tags and potentially theme layouts)
   # You might see other author/profile related params here
 
   # Date format throughout the site
-  DateFormat: "January 2, 2006" # Example format
+  DateFormat: "January 2, 2006" # Example Go time format string
 
-  # Default theme (light, dark, or auto)
+  # Default theme (light, dark, or auto based on user's system preference)
   defaultTheme: "light" # or "dark" or "auto"
 
   # Disable theme toggle (if you only want one theme)
   # disableThemeToggle: true
 
-  # Enable / Disable specific features globally
+  # Enable / Disable specific features globally (check PaperModX docs for all options)
   ShowShareButtons: true # Show social share buttons on articles
   ShowReadingTime: true # Show estimated reading time on articles
   ShowPostNavLinks: true # Show previous/next post links at the end of articles
-  ShowRssButtonLeafBundle: false # Usually false unless you have specific RSS needs
+  ShowRssButtonLeafBundle: false # Usually false unless you have specific RSS needs for leaf bundles
   ShowToc: true # Enable Table of Contents by default for pages/posts
 
-  # This is often for the profile mode on the homepage (see PaperModX docs)
+  # Profile Mode (if you want a profile-style homepage - see PaperModX docs)
   # profileMode:
   #   enabled: false # Set to true to enable profile mode
   #   title: "Sleepy to Rested" # Title in profile mode
   #   subtitle: "Your journey to better sleep starts here." # Subtitle
-  #   imageUrl: "path/to/your/profile/image.jpg" # Path to your image
+  #   imageUrl: "path/to/your/profile/image.jpg" # Path to your image in static/ or assets/
   #   imageZoom: false # Zoom effect on image
   #   imageCircleIcons: true # Circle icons below image
-  #   imageWidth: 125 # Image width
-  #   imageHeight: 125 # Image height
+  #   imageWidth: 125 # Image width in pixels
+  #   imageHeight: 125 # Image height in pixels
   #   buttons:
   #     - name: "Articles"
-  #       url: "/posts/"
+  #       url: "/posts/" # URL for the button
   #     - name: "About"
-  #       url: "/about/"
+  #       url: "/about/" # URL for the button
+  #     # Add other buttons as needed
 
-  # Homepage layout settings (often within params or a sub-section)
-  # You might see settings related to listing posts here
-  # homeInfoParams: # Another section for homepage content/layout
-  #   Title: "Welcome to Sleepy to Rested"
-  #   Content: "Your guide to achieving genuine quality sleep. We help you go from feeling sleepy to being truly rested through practical tips and advice."
-
-  # Social Icons (usually at the bottom/footer)
+  # Social Icons (usually displayed in the footer or profile mode)
   # socialIcons:
   #   - name: "linkedin"
-  #     url: "your-linkedin-profile-url" # Replace with your URL
+  #     url: "your-linkedin-profile-url" # Replace with your actual URL
   #   - name: "github"
-  #     url: "your-github-profile-url"   # Replace with your URL
+  #     url: "your-github-profile-url"    # Replace with your actual URL
   #   - name: "twitter"
-  #     url: "your-twitter-profile-url" # Replace with your URL
+  #     url: "your-twitter-profile-url" # Replace with your actual URL
   #   # Add other social media links as needed
 
-  # You'll find many other parameters for things like:
+  # You'll find many other parameters in the theme's example site config for things like:
   # analytics: (for Google Analytics or other tracking)
   # assets: (settings for CSS/JS assets)
   # fuseOpts: (settings for the built-in search, if enabled)
   # cover: (settings for cover images on posts)
   # label: (label/icon in header)
+  # comments: (settings for comment systems like Giscus, Disqus)
+  # home: (more specific homepage layout options)
 
 
 # --- Site Menu Configuration (Edit these for your navigation) ---
+# Defines the links that appear in your site's main menu.
 menu:
   main:
-    - identifier: "home"
-      name: "Home"
-      url: "/"
-      weight: 10
+    - identifier: "home" # Unique identifier for the menu item
+      name: "Home" # Text displayed in the menu
+      url: "/" # URL the menu item links to (relative to baseURL)
+      weight: 10 # Controls the order of the menu items (lower weight appears first)
 
     - identifier: "articles"
       name: "Articles"
-      url: "/posts/" # Make sure this matches where your articles are
+      url: "/posts/" # Make sure this matches the permalinks for your posts
       weight: 20
 
     - identifier: "about"
       name: "About"
-      url: "/about/" # Make sure this matches your about page URL
+      url: "/about/" # Make sure this matches the URL of your about page
       weight: 30
 
     # Add more menu items as needed for Categories, Tags, etc.
-    # Look at the example site's menu config for ideas.
+    # Look at the PaperModX example site's config.yaml for more examples.
 
 
 # --- Other Hugo/PaperModX Sections You Might See ---
-# outputs: # Configure output formats (HTML, RSS, JSON, etc.)
-#   home: ["HTML", "RSS", "JSON"]
-#   page: ["HTML", "AMP"] # Example for AMP
-#   section: ["HTML", "RSS"]
-#   taxonomy: ["HTML", "RSS"]
-#   term = ["HTML", "RSS"]
+# outputs: # Configure output formats (HTML, RSS, JSON, etc.) for different page types
+#   home: ["HTML", "RSS", "JSON"] # Example for homepage
+#   page: ["HTML", "AMP"] # Example for standard pages and AMP
+#   section: ["HTML", "RSS"] # Example for list pages (sections)
+#   taxonomy: ["HTML", "RSS"] # Example for taxonomy list pages
+#   term = ["HTML", "RSS"] # Example for term pages
 
-# taxonomies: # Define custom taxonomies if needed
+# taxonomies: # Define custom taxonomies if needed (in addition to built-in tags and categories)
 #   category: "categories"
 #   tag: "tags"
 #   series: "series"
 
-# markup: # Configure markdown rendering settings
+# markup: # Configure markdown rendering settings (e.g., for table of contents)
 #   # Example: Enable and configure table of contents specifically via markup
 #   tableOfContents:
-#     startLevel: 2
-#     endLevel: 3
-#     ordered: true
+#     startLevel: 2 # Start TOC from H2
+#     endLevel: 3 # End TOC at H3
+#     ordered: true # Use ordered list for TOC
 
 # sitemap: # Sitemap configuration for SEO
 #   changefreq: "weekly"
 #   priority: 0.5
+#   filename: "sitemap.xml" # Default filename
 
-# privacy: # Privacy settings (e.g., for embedded content)
+# privacy: # Privacy settings (e.g., for embedded content like YouTube)
 
-# services: # Configure external services (e.g., for analytics)
-
+# services: # Configure external services (e.g., for Google Analytics)
+#   googleAnalytics:
+#     enable: true
+#     id: "UA-XXXXXXXXX-X" # Replace with your Google Analytics ID
 
 # --- End of Representative config.yaml ---
