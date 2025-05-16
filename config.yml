@@ -3,7 +3,7 @@
 baseURL: 'https://pestpolicy.com/' # The base URL for your deployed website.
 
 languageCode: 'en-us'           # Your language code
-title: 'Home Improvement'         # Your website's title
+title: 'GUIDES'         # Your website's title
 theme: "PaperModX"               # Make sure this is "PaperModX"
 
 permalinks:
