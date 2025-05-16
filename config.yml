@@ -49,7 +49,7 @@ params:
   ShowPostNavLinks: true
   ShowRssButtonLeafBundle: false
   ShowToc: true
-  tocPosition: "right" # <--- Add this based on documentation
+  TocSide: right
 
   # Profile Mode (optional homepage style)
   # profileMode:
