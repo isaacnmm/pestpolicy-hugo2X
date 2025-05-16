@@ -25,17 +25,17 @@ homeInfoParams:
   #   - name: "About Us"
   #     url: "/about/"
 
-  # Sidebar Configuration
-  sidebar:
-    position: "right"  # or "left"
-    width: "300px"
-    sticky: true
-
-
 # --- Theme-Specific Parameters (PaperModX) ---
-
 params:
   env: "production" # Keep as "production" for live site builds
+  sidebar:
+    widgets:
+      # ... (your existing widgets)
+      - type: "disclosure"
+        title: "Affiliate Disclosure"
+        content: "We may earn a commission when you click and buy from Amazon.com"
+        amazon_logo: true
+        link: "https://www.amazon.com/"
 
   # Site Metadata for SEO
   description: "Pest solutions, Sprayers and Paint. Visit the [Product Reviews](/categories/product-reviews/) or check out the [DIY Guides](/categories/guide/)."
