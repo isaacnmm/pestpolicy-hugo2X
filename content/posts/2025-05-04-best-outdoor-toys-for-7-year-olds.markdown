@@ -8,6 +8,7 @@ categories:
 tags: []
 slug: /best-outdoor-toys-for-7-year-olds/
 lastmod: 2025-05-07T12:21:24+03:00
+TocSide: right
 ---
 > **We may earn a commission when you click and buy from Amazon.com.**
 >
