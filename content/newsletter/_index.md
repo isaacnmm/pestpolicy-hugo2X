@@ -1,8 +1,7 @@
 ---
 title: My Newsletter
-subtitle: What do you want to write?
 description: |
-  This is the template for creating a newsletter in PaperModX.
+  Enter your email address to receive our latest guides and product reviews on home improvement
 type: newsletter
 cascade:
   - _target:
