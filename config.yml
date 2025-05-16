@@ -3,7 +3,7 @@
 baseURL: 'https://pestpolicy.com/' # The base URL for your deployed website.
 
 languageCode: 'en-us'               # Your language code
-title: 'PestPolicy'           # Your website's title
+title: 'Home Improvement'           # Your website's title
 theme: "PaperModX"                  # Make sure this is "PaperModX"
 
 permalinks:
@@ -33,12 +33,10 @@ params:
   # Site Metadata for SEO
   description: "Pest solutions, Sprayers and Paint. Visit the [Product Reviews](/categories/product-reviews/) or check out the [DIY Guides](/categories/guide/)."
   keywords:
-    - sleep
-    - rest
-    - quality sleep
-    - sleep health
-    - insomnia
-    - bedroom environment
+    - pest control 
+    - spray painting 
+    - walking and running shoes
+
 
   author: "Isaac"
 
@@ -89,7 +87,7 @@ menu:
       weight: 10
 
     - identifier: "articles"
-      name: "Articles"
+      name: "Blog"
       url: "/posts/"
       weight: 20
 
