@@ -25,6 +25,13 @@ homeInfoParams:
   #   - name: "About Us"
   #     url: "/about/"
 
+  # Sidebar Configuration
+  sidebar:
+    position: "right"  # or "left"
+    width: "300px"
+    sticky: true
+
+
 # --- Theme-Specific Parameters (PaperModX) ---
 
 params:
