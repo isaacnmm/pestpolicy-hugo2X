@@ -33,7 +33,7 @@ If you notice signs of ant activity in your home, these DIY methods can help con
 3. **Diatomaceous Earth**: Sprinkle food-grade diatomaceous earth around ant entry points and along ant trails. This powdery substance is non-toxic to humans and pets but lethal to ants, causing them to dehydrate and die.
 4. **Borax and Sugar Solution**: Mix borax with sugar and water to create a homemade ant bait. Place the solution in shallow containers near ant trails. The sugar attracts the ants, while the borax kills them.
 #### When to Call a Professional in Federal Way
-While DIY methods can be effective for minor infestations, severe or persistent ant problems may require professional intervention. If you notice large numbers of ants, difficulty locating the nest, or recurring infestations, its time to call a professional pest control service in Federal Way.
+While these DIY methods can be effective for minor infestations, severe or persistent ant problems may require professional intervention. If you notice large numbers of ants, difficulty locating the nest, or recurring infestations, its time to call a professional pest control service in Federal Way.
 
 Professional pest control technicians have the expertise and tools to identify the specific type of ant and implement targeted treatments. They can also provide long-term prevention strategies to keep ants from returning, tailored to Federal Ways unique environment.
 #### Conclusion
