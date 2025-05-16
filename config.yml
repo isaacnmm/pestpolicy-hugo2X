@@ -7,6 +7,19 @@ theme: "PaperModX" # Make sure this is "PaperModX"
 permalinks:
   posts: "/:slug/"
 
+  homeInfoParams:
+    Title: "PaperModX"
+    Content: |
+      Welcome to demo of hugo's theme PaperModX.
+
+      - **PaperModX** is a simple but fast and responsive theme with useful feature-set that enhances UX.
+
+      - PaperModX is based on theme [PaperMod](https://github.com/adityatelange/hugo-PaperMod).
+
+      To get started, please head to the [Docs](docs).
+
+      To see examples of different contents, head to [examples tag](tags/example).
+
 # --- Theme-Specific Parameters (PaperModX) ---
 # Found within the [params] or 'params:' section. Edit these for your site.
 params:
