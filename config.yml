@@ -86,12 +86,6 @@ menu:
       url: "/posts/"
       weight: 20
 
-  sidebar: # Create a new menu named "sidebar"
-    - identifier: "amazon-note"
-      name: '<div class="sidebar-note"><h3>Note</h3><p>We may earn a commission when you click and buy from Amazon.com.</p></div>'
-      url: "#" # Not clickable
-      weight: 999 # Place at the bottom of the sidebar
-
     # Add more menu items as needed
 
 # --- Optional Advanced Config Sections (commented) ---
