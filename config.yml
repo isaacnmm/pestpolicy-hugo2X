@@ -2,12 +2,12 @@
 
 baseURL: 'https://pestpolicy.com/' # The base URL for your deployed website.
 
-languageCode: 'en-us'           # Your language code
+languageCode: 'en-us'         # Your language code
 title: 'Home Improvement'         # Your website's title
-theme: "PaperModX"               # Make sure this is "PaperModX"
+theme: "PaperModX"             # Make sure this is "PaperModX"
 
 permalinks:
-  posts: "/:slug/"               # Permalink structure for your articles
+  posts: "/:slug/"             # Permalink structure for your articles
 
 # --- Homepage Info / Banner Configuration (theme-specific) ---
 
@@ -40,8 +40,8 @@ params:
 
   DateFormat: "January 2, 2006" # Format for dates
 
-  defaultTheme: "light"       # Options: "light", "dark", or "auto"
-  # disableThemeToggle: true    # Uncomment to disable theme toggle
+  defaultTheme: "light"        # Options: "light", "dark", or "auto"
+  # disableThemeToggle: true     # Uncomment to disable theme toggle
 
   # Feature toggles
   ShowShareButtons: true
@@ -84,13 +84,13 @@ menu:
     - identifier: "articles"
       name: "Blog"
       url: "/posts/"
-      weight: 20 
+      weight: 20
 
   sidebar: # Create a new menu named "sidebar"
-    - identifier: "my-note"
-      name: '<div class="sidebar-note"><h3>Important Note</h3><p>We may earn a commission when you click and buy from Amazon.com</p></div>'
-      url: "#" # Or a specific link if you want the note to be clickable
-      weight: 999 # Ensure it appears where you want in the sidebar order
+    - identifier: "amazon-note"
+      name: '<div class="sidebar-note"><h3>Note</h3><p>We may earn a commission when you click and buy from Amazon.com.</p></div>'
+      url: "#" # Not clickable
+      weight: 999 # Place at the bottom of the sidebar
 
     # Add more menu items as needed
 
